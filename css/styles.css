@@ -1,8 +1,9 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
-html{
+html {
   font-size: 18px;
 }
 
@@ -17,7 +18,53 @@ h1 {
   font-size: 1.1rem;
 }
 
-.avatar-img{
+h1:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+span{
+  color: #fff;
+}
+
+span:hover{
+  color:hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+p{
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5;
+}
+
+.ether__img {
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z' fill='%2300FFF8'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.time__img{
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z' fill='%238BACD9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.middle{
+  border-radius: 10px;
+  padding-top: 125px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.avatar-img {
   width: 30px;
   height: 30px;
   border: 1.5px solid white;
@@ -25,28 +72,40 @@ h1 {
   margin-right: 1rem;
 }
 
-.content__author{
+.ether{
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.content__author {
   display: flex;
   border-top: 2px solid hsl(215, 32%, 27%);
   padding-top: 0.3rem;
   align-items: center;
 }
 
-.price{
+.price {
   display: flex;
   justify-content: space-between;
 }
 
-.equil-img{
+.equil-img {
+  opacity: 1;
+  display: block;
+  backface-visibility: hidden;
   border-radius: 10px;
   width: 300px;
 }
 
-.container{
-  padding: 100px 0;
+.image__container{
+  position: relative;
 }
 
-.card{
+.container {
+  padding: 150px 0;
+}
+
+.card {
   margin: 0 auto;
   width: 80%;
   max-width: 350px;
@@ -57,4 +116,13 @@ h1 {
 
 .card__content {
   padding: 25px;
+}
+
+.image__container:hover .view-img{
+  opacity: 1;
+}
+
+.image__container:hover .middle{
+  opacity: 0.5;
+  cursor: pointer;
 }
