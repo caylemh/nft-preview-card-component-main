@@ -17,9 +17,28 @@ h1 {
   font-size: 1.1rem;
 }
 
+.avatar-img{
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid white;
+  border-radius: 100px;
+  margin-right: 1rem;
+}
+
+.content__author{
+  display: flex;
+  border-top: 2px solid hsl(215, 32%, 27%);
+  padding-top: 0.3rem;
+  align-items: center;
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+}
+
 .equil-img{
   border-radius: 10px;
-  margin: 25px 25px 0 25px;
   width: 300px;
 }
 
@@ -34,4 +53,8 @@ h1 {
   background-color: hsl(216, 50%, 16%);
   box-shadow: 0 30px 60px hsl(217, 50%, 9%);
   border-radius: 20px;
+}
+
+.card__content {
+  padding: 25px;
 }
