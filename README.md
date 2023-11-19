@@ -38,13 +38,13 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Desktop-first workflow
+- Mobile-first workflow
 
 ### What I learned
 
 V1 - This one was easy before hitting the Hover effects. A bit tricky but I know that should be able to streamline it next time I encounter a problem like this.
 
-V2 - Going to give this another try, but only using Flexbox and more streamlineing the design part too.
+V2 - Going to give this another try, but only using Flexbox and more streamlining the design part too.
 
 ### Useful resources
 
