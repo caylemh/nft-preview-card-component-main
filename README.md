@@ -42,7 +42,9 @@ Users should be able to:
 
 ### What I learned
 
-This one was easy before hitting the Hover effects. A bit tricky but I know that should be able to streamline it next time I encounter a problem like this.
+V1 - This one was easy before hitting the Hover effects. A bit tricky but I know that should be able to streamline it next time I encounter a problem like this.
+
+V2 - Going to give this another try, but only using Flexbox and more streamlineing the design part too.
 
 ### Useful resources
 
