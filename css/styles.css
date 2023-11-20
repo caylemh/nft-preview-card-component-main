@@ -5,6 +5,15 @@
   padding: 0
 }
 
+:root {
+  --prim-soft-blue: hsl(215, 51%, 70%);
+  --prim-cyan: hsl(178, 100%, 50%);
+  --mainbg-dark-blue: hsl(217, 54%, 11%);
+  --cardbg-dark-blue: hsl(216, 50%, 16%);
+  --line-dark-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%)
+}
+
 html {
   font-size: 18px;
 }
@@ -22,8 +31,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 375px;
+  width: 375px;
+  /* flex: 0 0 375px; */
   flex-direction: column;
+  padding: 1rem;
 }
 
 .attribution {
