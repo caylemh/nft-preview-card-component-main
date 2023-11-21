@@ -8,6 +8,7 @@
 :root {
   --prim-soft-blue: hsl(215, 51%, 70%);
   --prim-cyan: hsl(178, 100%, 50%);
+  --prim-cyan-transparent: hsla(178, 100%, 50%, 0.5);
   --mainbg-dark-blue: hsl(217, 54%, 11%);
   --cardbg-dark-blue: hsl(216, 50%, 16%);
   --line-dark-blue: hsl(215, 32%, 27%);
@@ -26,7 +27,6 @@ body {
   align-items: center;
   height: 100vh;
   padding: 1.5rem;
-  min-width: 375px
 }
 
 a {
@@ -43,7 +43,7 @@ p {
   color: var(--prim-soft-blue);
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
 h1 {
@@ -67,9 +67,10 @@ hr {
 
 .container-card {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 375px;
   padding: 1.5rem;
   background-color: var(--cardbg-dark-blue);
   border-radius: 1rem;
@@ -85,8 +86,36 @@ hr {
   margin: 0.8rem 0 0;
 }
 
+.hero-content {
+  position: relative;
+}
+
 .img-equilibrium {
+  display: block;
   border-radius: 0.5rem;
+  width: 100%;
+  height:auto
+}
+
+.overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--prim-cyan-transparent);
+  opacity: 0;
+}
+
+.hero-content:hover .overlay {
+  opacity: 1;
+}
+
+.image-eye {
+  position: absolute;
+  top: 41%;
+  left: 42%
 }
 
 .avatar-details {
@@ -106,7 +135,7 @@ hr {
 }
 
 .info-details {
-  margin: 0.8rem 0 0;
+  margin: 0.9rem 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
